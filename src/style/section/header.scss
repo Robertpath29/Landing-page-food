@@ -1,0 +1,57 @@
+.header {
+    margin-top: 40px;
+
+    &-logo {
+        width: 540px;
+        margin-bottom: 10px;
+    }
+
+    &-nav {
+        margin: 0;
+        padding: 0;
+
+        &-item {
+            margin-left: 60px;
+
+            &:first-child {
+                margin: 0;
+            }
+
+            &>a {
+                font-size: 1.25rem;
+                text-decoration: none;
+                color: white;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: $color-active;
+                }
+            }
+        }
+    }
+
+    &-input {
+        &>input {
+            display: none;
+            height: 35px;
+            width: 0;
+            border: 0;
+            border-radius: 10px;
+            margin-left: 20px;
+            outline: none;
+            transition: all 1s;
+        }
+    }
+
+    &-input-button {
+        height: 35px;
+        width: 35px;
+        margin-left: 20px;
+        border: 0;
+        @include sprite($-search-icon);
+        background-color: transparent;
+
+
+
+    }
+}

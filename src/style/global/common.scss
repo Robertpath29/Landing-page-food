@@ -1,0 +1,31 @@
+.container {
+    max-width: $width-page;
+    margin: auto;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.visibility-input {
+    display: block !important;
+    width: 190px !important;
+}
+
+
+.center-y {
+    align-items: center;
+}
+
+.center-x {
+    justify-content: center;
+}
+
+.active {
+    color: $color-active !important;
+}
