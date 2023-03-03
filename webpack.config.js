@@ -8,6 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const postcssPresetEnv = require("postcss-preset-env");
 const SpritesmithPlugin = require('webpack-spritesmith');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
     mode,
@@ -44,6 +45,24 @@ module.exports = {
             apiOptions: {
                 cssImageRef: "./img/icons/sprite/sprite.png"
             }
+        }),
+        new FaviconsWebpackPlugin({
+            logo: path.resolve(__dirname, './src/img/icons/favicons/BestSeler-img-1.png'),
+
+            outputPath: "favicons/",
+            prefix: "favicons/",
+
+            favicons: {
+                icons: {
+                    android: false,
+                    appleIcon: false,
+                    appleStartup: false,
+                    coast: false,
+                    favicons: true,
+                    windows: false,
+                    yandex: false
+                },
+            },
         }),
     ],
 
