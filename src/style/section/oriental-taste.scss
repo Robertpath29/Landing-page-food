@@ -1,0 +1,33 @@
+.oriental-taste {
+    justify-content: space-between;
+    background-image: url("/src/img/Oriental-Taste-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+
+    &-container {
+        padding-top: 140px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &>.containers-title {
+            align-self: flex-end;
+            margin-bottom: 30px;
+            &>h1 {
+                font-size: 6rem;
+            }
+            &>p{
+                font-size: 1.555rem;
+                margin: 25px 0 60px 0;
+            }
+            &>button{
+                width: 320px;
+                height: 60px;
+            }
+        }
+
+
+    }
+
+
+}

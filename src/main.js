@@ -8,6 +8,7 @@ import "./img/logo.png"
 import "./img/BestSeler-img-1.png"
 import "./img/BestSeler-img-2.png"
 import "./img/BestSeler-img-3.png"
+import "./img/Oriental-Taste-img.png"
 
 
 
