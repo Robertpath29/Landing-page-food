@@ -1,0 +1,16 @@
+section.best-seller.container.center-text
+
+    h1.title-small Best Seller
+    p.line-height Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+
+    .best-seller-container.d-flex 
+    
+        -var foodImg =["/img/BestSeler-img-1.png","/img/BestSeler-img-2.png","/img/BestSeler-img-3.png"];
+        -var foodTitle =["Title Here","Title Here","Title Here"];
+        -var foodText =["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."];
+
+        each food, key in foodTitle
+            .best-seller-container-food
+                img(src=foodImg[key] alt="food")
+                h2.title-small=foodTitle[key]
+                p.line-=foodText[key]

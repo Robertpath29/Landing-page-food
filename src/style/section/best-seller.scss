@@ -1,0 +1,36 @@
+.best-seller {
+    padding-top: 125px;
+    margin-bottom: 230px;
+
+    &>h1 {
+        font-size: 4rem;
+        font-weight: 100;
+        margin: 0;
+    }
+
+    &>p {
+        font-size: 1.5rem;
+        color: $color-title;
+        margin: 35px 0px 70px 0px;
+        padding: 0px 200px 0px 200px;
+    }
+
+    &-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-food {
+            width: 300px;
+            &>h2{
+                font-size: 2.60rem;
+                margin: 10px 0;
+                font-weight: 100;
+            }
+            &>p{
+                color: $color-title;
+                margin: 0;
+            
+            }
+        }
+    }
+}
