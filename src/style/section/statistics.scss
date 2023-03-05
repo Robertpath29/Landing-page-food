@@ -1,0 +1,47 @@
+.statistics {
+    padding: 120px 0 190px 0;
+    background-color: gray;
+    background-image: url("/src/img/Statistics-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &>h1 {
+        font-size: 6rem;
+        margin: 0;
+        font-weight: 100;
+    }
+
+    &>p {
+        font-size: 1.555rem;
+        margin: 30px 350px 0 350px;
+        color: white;
+    }
+
+    &-category {
+        margin-top: 90px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &>div {
+            flex-direction: column;
+            width: 240px;
+            height: 240px;
+            background: transparent;
+            border: 4px solid white;
+            border-radius: 50%;
+
+            &>:first-child {
+                color: $color-statistics;
+                font-weight: bold;
+                font-size: 3.55rem;
+            }
+            
+            &>:last-child {
+                font-weight: bold;
+                color: white;
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

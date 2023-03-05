@@ -1,0 +1,10 @@
+section.statistics.center-text
+    h1.title-big Statistics
+    p.line-height Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+    .d-flex.statistics-category.container
+        -var number = [123,100,300,30]
+        -var name = ["outlets","chef","menu", "country"]
+            each category,key in name 
+                div.d-flex.center-x.center-y
+                    span=number[key]
+                    span.uppercase=name[key]
