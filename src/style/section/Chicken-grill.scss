@@ -1,0 +1,35 @@
+.chicken-grill {
+    justify-content: space-between;
+    background-image: url("/src/img/Chicken-grill-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 120px;
+    padding-bottom: 140px;
+    
+    &-container {
+        padding-top: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        &>.containers-title {
+            align-self: flex-end;
+            margin-bottom: 30px;
+            &>h1 {
+                font-size: 6rem;
+            }
+            &>p{
+                font-size: 1.555rem;
+                margin: 25px 0 60px 0;
+            }
+            &>button{
+                width: 320px;
+                height: 60px;
+            }
+        }
+
+
+    }
+
+
+}
