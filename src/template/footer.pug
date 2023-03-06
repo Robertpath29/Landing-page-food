@@ -1,0 +1,34 @@
+footer.footer-background
+    .footer.container.d-flex
+        .footer-title-here
+            h2.uppercase title here
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. 
+            .footer-title-here-icons.d-flex
+
+                -var webs = ["https://www.instagram.com/","https://uk-ua.facebook.com/","https://twitter.com/?lang=uk","https://www.whatsapp.com/?lang=ru"]
+
+                -var icons = ["instagram","facebook-f","twitter","whatsapp"]
+
+                each web, key in webs 
+                    a(href=web target="_blank").d-flex
+                        i.fa-brands(class="fa-" + icons[key])
+
+        .footer-about.footer-list
+            h2.uppercase about
+            -var links = ["History", "Our Team", "Brand Guidelines", "Terms & Condition", "Privacy Privacy"]
+            each link in links 
+                a(href="#")=link
+        .footer-services.footer-list
+            h2.uppercase services
+            -var links = ["How to Order", "Our Product", "Order Status", "Promo", "Payment Method"]
+            each link in links 
+                a(href="#")=link 
+        .footer-other.footer-list           
+            h2.uppercase services
+            -var links = ["Contact Us", "Help", "Privacy"]
+            each link in links 
+                a(href="#")=link 
+
+
+
+
