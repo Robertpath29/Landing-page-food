@@ -3,6 +3,7 @@
     background-image: url("/src/img/Chicken-grill-background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin-bottom: 120px;
     padding-bottom: 140px;
     
@@ -17,6 +18,8 @@
             margin-bottom: 30px;
             &>h1 {
                 font-size: 6rem;
+                font-weight: 100;
+                margin: 0;
             }
             &>p{
                 font-size: 1.555rem;

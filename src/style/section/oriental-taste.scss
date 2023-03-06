@@ -3,6 +3,7 @@
     background-image: url("/src/img/Oriental-Taste-background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-bottom: 80px;
 
     &-container {
@@ -14,7 +15,9 @@
             align-self: flex-end;
             margin-bottom: 30px;
             &>h1 {
+                font-weight: 100;
                 font-size: 6rem;
+                margin: 0;
             }
             &>p{
                 font-size: 1.555rem;

@@ -1,0 +1,42 @@
+.subscribe {
+    padding: 140px 0 300px 0;
+    background-color: gray;
+    background-image: url("/src/img/subscribe-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    &>h1 {
+        margin: 0 0 15px 0;
+        font-weight: 100;
+        font-size: 7.5rem;
+    }
+
+    &>p {
+        font-size: 2.2rem;
+        margin: 0 210px;
+    }
+
+    &-input {
+        justify-content: center;
+        margin-top: 70px;
+
+        &>input {
+            width: 550px;
+            height: 60px;
+            border: none;
+            outline: none;
+            padding-left: 35px;
+            box-shadow: 0 0 50px 10px rgba(gray, $alpha: 0.1);
+        }
+
+        &>button {
+            width: 220px;
+            height: 60px;
+            border-radius: 0 4px 4px 0;
+            font-size: 1.5rem;
+
+        }
+    }
+}
