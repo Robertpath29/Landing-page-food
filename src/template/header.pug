@@ -1,11 +1,11 @@
 header.header.container.d-flex.center-y
     .header-logo.d-flex 
         img(src="./img/logo.png" alt="logo")
-
-    -var lists  = ["Home","Product", "Promo", "About", "Contact"]
-    ul.header-nav.d-flex
-        each list,key  in lists
-            li.header-nav-item: a(href="#")=lists[key]
+    nav
+        -var lists  = ["Home","Product", "Promo", "About", "Contact"]
+        ul.header-nav.d-flex
+            each list,key  in lists
+                li.header-nav-item: a(href="#")=lists[key]
 
     .header-input.d-flex.center-y
         input(type="text")

@@ -1,5 +1,5 @@
 .subscribe {
-    padding: 140px 0 300px 0;
+    padding: 140px 0 291px 0;
     background-color: gray;
     background-image: url("/src/img/subscribe-background.png");
     background-repeat: no-repeat;
@@ -10,24 +10,28 @@
     &>h1 {
         margin: 0 0 15px 0;
         font-weight: 100;
-        font-size: 7.5rem;
+        font-size: 6.3rem;
     }
 
     &>p {
-        font-size: 2.2rem;
-        margin: 0 210px;
+        font-size: 1.855rem;
+        margin: 0 240px;
+        margin-top: 20px;
     }
 
     &-input {
         justify-content: center;
-        margin-top: 70px;
+        margin-top: 82px;
+        margin-left: 35px;
 
         &>input {
             width: 550px;
             height: 60px;
             border: none;
             outline: none;
-            padding-left: 35px;
+            padding-left: 33px;
+            word-spacing: 3px;
+            font-size: 1.5rem;
             box-shadow: 0 0 50px 10px rgba(gray, $alpha: 0.1);
         }
 

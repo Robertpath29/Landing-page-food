@@ -1,24 +1,40 @@
 .header {
     justify-content: space-between;
+    max-width: $width-page + 21px;
 
     &-logo {
         width: 540px;
-        margin-bottom: 10px;
+        margin-top: 7px;
     }
 
     &-nav {
-        margin: 0;
+        margin: 6px 45px 0 0;
         padding: 0;
 
+
         &-item {
-            margin-left: 60px;
+            margin-left: 69px;
+            margin-right: 10px;
 
             &:first-child {
                 margin: 0;
+
             }
 
+            &:nth-child(3) {
+                margin-left: 45px;
+            }
+
+            &:nth-child(4) {
+                margin-left: 45px;
+            }
+
+
+
+
+
             &>a {
-                font-size: 1.25rem;
+                font-size: 1.47rem;
                 text-decoration: none;
                 color: white;
                 transition: all 0.3s;

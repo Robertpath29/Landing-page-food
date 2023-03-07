@@ -4,30 +4,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 120px;
-    padding-bottom: 140px;
-    
+    margin-bottom: 109px;
+    padding-bottom: 107px;
+
     &-container {
-        padding-top: 30px;
+        padding-top: 16px;
+        margin: 0 130px;
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: row-reverse;
 
         &>.containers-title {
             align-self: flex-end;
-            margin-bottom: 30px;
+            margin-bottom: 67px;
+            margin-left: 6px;
+
             &>h1 {
                 font-size: 6rem;
                 font-weight: 100;
                 margin: 0;
+                letter-spacing: 1px;
             }
-            &>p{
-                font-size: 1.555rem;
-                margin: 25px 0 60px 0;
+
+            &>p {
+                font-size: 1.8rem;
+                margin: 29px 61px 74px 0;
             }
-            &>button{
+
+            &>button {
                 width: 320px;
                 height: 60px;
+                font-size: 1.6rem;
             }
         }
 
