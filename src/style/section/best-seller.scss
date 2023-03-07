@@ -2,6 +2,15 @@
     padding-top: 125px;
     margin-bottom: 230px;
 
+    @media (max-width:734px) {
+        padding-top: 50px;
+
+    }
+
+    @media (max-width:1222px) {
+        margin-bottom: 50px;
+    }
+
     &>h1 {
         font-size: 5rem;
         font-weight: 100;
@@ -13,6 +22,16 @@
         color: $color-title;
         margin: 19px 0px 70px 0px;
         padding: 0 160px;
+
+        @media (max-width:734px) {
+            margin-bottom: 10px;
+
+        }
+
+        @media (max-width:543px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 
     &-container {
@@ -20,17 +39,37 @@
         justify-content: space-between;
         padding: 0 73px;
 
+        @media (max-width:747px) {
+            justify-content: center;
+        }
+
+
+
         &-food {
             width: 300px;
-            &>h2{
+
+            @media (max-width :1045px) {
+                margin-top: 20px;
+
+            }
+
+            &>h2 {
                 font-size: 2.60rem;
                 margin: 10px 0;
                 font-weight: 100;
+                @media (max-width:543px) {
+                    font-size: 3rem;
+                }
             }
-            &>p{
+
+            &>p {
                 color: $color-title;
                 margin: 0;
-            
+
+                @media (max-width:543px) {
+                    font-size: 2rem;
+                }
+
             }
         }
     }

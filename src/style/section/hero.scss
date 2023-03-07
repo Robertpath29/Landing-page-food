@@ -9,6 +9,13 @@
     background-size: cover;
 
 
+    @media (max-height:630px) {
+        height: 100%;
+        padding-bottom: 100px;
+    }
+
+
+
     &-container {
         &>.containers-title {
             margin-top: 126px;
@@ -23,6 +30,26 @@
             &>button {
                 width: 245px;
                 margin-left: 6px;
+            }
+
+            @media (max-width: 1037px) {
+                margin-right: 52px;
+                width: 459px;
+            }
+
+            @media (max-width: 791px) {
+                margin-right: 0;
+                width: 452px;
+            }
+
+            @media (max-width:600px) {
+                width: 427px;
+
+            }
+
+            @media (max-width:543px) {
+                width: 262px;
+
             }
         }
     }

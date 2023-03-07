@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media (max-width:543px) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
 
 
     &>h1 {
@@ -17,12 +21,22 @@
         font-size: 1.855rem;
         margin: 0 240px;
         margin-top: 20px;
+
+        @media (max-width:870px) {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
     }
 
     &-input {
         justify-content: center;
         margin-top: 82px;
         margin-left: 35px;
+
+        @media (max-width:900px) {
+            margin-right: 35px;
+        }
+
 
         &>input {
             width: 550px;
@@ -33,6 +47,9 @@
             word-spacing: 3px;
             font-size: 1.5rem;
             box-shadow: 0 0 50px 10px rgba(gray, $alpha: 0.1);
+            @media (max-width:543px) {
+                font-size: 2.3rem;
+            }
         }
 
         &>button {

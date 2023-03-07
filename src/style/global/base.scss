@@ -5,6 +5,16 @@ body {
 
 html {
     box-sizing: border-box;
+
+    @media (max-width:600px) {
+        font-size: 12px;
+    }
+    
+    @media (max-width:543px) {
+        
+        font-size: 8px;
+
+    }
 }
 
 *,

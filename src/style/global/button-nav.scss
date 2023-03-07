@@ -1,0 +1,20 @@
+.button-nav {
+    display: none;
+    width: max-content;
+    margin-top: 12px;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0;
+
+    &>.fa-solid {
+        color: white;
+        font-size: 3rem;
+    }
+
+
+    @media (max-width: 1037px) {
+        display: flex;
+    }
+}

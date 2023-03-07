@@ -4,19 +4,51 @@
     background-color: $color-footer;
     color: white;
 
+    @media (max-width:798px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .footer-services {
+        @media (max-width:1222px) {
+            margin-left: 0 !important;
+        }
+    }
+
     .footer {
         margin-left: 94px;
+
+        @media (max-width:543px) {
+            font-size: 2.5rem;
+        }
+
+        @media (max-width:798px) {
+            margin-left: 50px;
+            flex-wrap: wrap-reverse;
+        }
+
 
 
         &-title-here {
             max-width: 453px;
             margin-right: 172px;
 
+            @media (max-width :1303px) {
+                margin-right: 80px;
+
+            }
+
             &>p {
                 font-size: 1.4rem;
                 line-height: 1.7rem;
                 word-spacing: 0.26rem;
                 margin-top: 32px;
+
+                @media (max-width:543px) {
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                }
+
             }
 
             &-icons {
@@ -43,6 +75,10 @@
                         color: $color-footer;
                         transition: all 0.3s;
 
+                        @media (max-width:543px) {
+                            font-size: 3.3rem;
+
+                        }
 
                     }
 
@@ -60,6 +96,12 @@
             display: flex;
             flex-direction: column;
             width: 50%;
+            
+
+            @media (max-width :1303px) {
+                margin-right: 20px;
+
+            }
 
 
             &>h2 {
@@ -80,17 +122,28 @@
                 &:hover {
                     color: $color-active;
                 }
+
+
+                @media (max-width:543px) {
+                    font-size: 2.5rem;
+                    line-height: 2.6rem;
+                }
             }
 
             &:nth-child(3) {
                 margin-left: 5px;
-               
+
 
             }
 
             &:last-child {
                 width: 31%;
                 margin-right: 21px;
+
+                @media (max-width :1303px) {
+                    margin-right: 40px;
+
+                }
             }
         }
 

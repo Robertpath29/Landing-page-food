@@ -15,4 +15,8 @@
     &:hover {
         background-color: lighten($color-button, 10%);
     }
+
+    @media (max-width:543px) {
+        width: 150px !important;
+    }
 }

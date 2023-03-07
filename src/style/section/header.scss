@@ -2,9 +2,26 @@
     justify-content: space-between;
     max-width: $width-page + 21px;
 
+
+    @media (max-width:1350px) {
+        margin: 0 30px;
+    }
+
+
+
     &-logo {
         width: 540px;
         margin-top: 7px;
+
+        @media (min-width:1037px) and (max-width:1263px) {
+            display: none;
+        }
+
+        &>img {
+            @media (max-width:543px) {
+                width: 100px;
+            }
+        }
     }
 
     &-nav {
@@ -33,6 +50,7 @@
 
 
 
+
             &>a {
                 font-size: 1.47rem;
                 text-decoration: none;
@@ -44,7 +62,33 @@
                 }
             }
         }
+
+        @media (max-width: 1037px) {
+            position: absolute;
+            top: 69px;
+            left: 34px;
+            margin-top: 32px;
+            padding: 0;
+            flex-direction: column;
+            height: 0 !important;
+            overflow: hidden;
+            transition: all 1s;
+
+            &>li {
+                margin: 0 !important;
+                margin-bottom: 40px !important;
+            }
+
+
+
+
+
+
+
+        }
     }
+
+
 
     &-input {
         &>input {
@@ -56,6 +100,15 @@
             margin-left: 20px;
             outline: none;
             transition: all 1s;
+
+            @media (max-width:600px) {
+                font-size: 1.5rem;
+            }
+
+            @media (max-width:543px) {
+                font-size: 2rem;
+            }
+
         }
     }
 
@@ -69,5 +122,14 @@
 
 
 
+    }
+}
+
+.visibility-input {
+    display: block !important;
+    width: 190px !important;
+
+    @media (max-width:543px) {
+        width: 80px !important;
     }
 }
