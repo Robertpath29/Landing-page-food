@@ -7,9 +7,13 @@ header.header.container.d-flex.center-y
         -var lists  = ["Home","Product", "Promo", "About", "Contact"]
         ul.header-nav.d-flex
             each list,key  in lists
-                li.header-nav-item: a(href="#")=lists[key]
+                li.header-nav-item: a(href="#" id=lists[key])=lists[key]
 
     .header-input.d-flex.center-y
         input(type="text")#search-input
         button.header-input-button
             i.fa-solid.fa-magnifying-glass
+
+    button.navigation-up.d-none  
+        i.fa-sharp.fa-solid.fa-arrow-up
+
