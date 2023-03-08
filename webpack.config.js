@@ -21,8 +21,8 @@ module.exports = {
     },
 
     entry: {
-        main: path.resolve(__dirname, "src", "main.js"),
         jQuery: path.resolve(__dirname, "./node_modules/jquery/src/jquery.js"),
+        main: path.resolve(__dirname, "src", "main.js"),
 
     },
 

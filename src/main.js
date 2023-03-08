@@ -12,6 +12,9 @@ import "./img/Oriental-Taste-img.png"
 import "./img/Chicken-grill-img.png"
 
 
+import "./modules/search.js"
+
+
 
 
 
