@@ -8,6 +8,10 @@
     display: flex;
 }
 
+.d-none {
+    display: none !important;
+}
+
 .hidden {
     display: none;
 }
@@ -28,10 +32,11 @@
 .uppercase {
     text-transform: uppercase;
 }
-.line-height{
+
+.line-height {
     line-height: 2rem;
 }
 
-.center-text{
+.center-text {
     text-align: center;
 }

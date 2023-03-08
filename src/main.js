@@ -13,6 +13,7 @@ import "./img/Chicken-grill-img.png"
 
 
 import "./modules/search.js"
+import "./modules/subscribe.js"
 
 
 

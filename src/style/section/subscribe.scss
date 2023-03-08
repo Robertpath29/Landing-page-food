@@ -5,9 +5,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     @media (max-width:543px) {
         padding-top: 50px;
         padding-bottom: 20px;
+        background-size: 200% 200%;
+
     }
 
 
@@ -47,6 +50,7 @@
             word-spacing: 3px;
             font-size: 1.5rem;
             box-shadow: 0 0 50px 10px rgba(gray, $alpha: 0.1);
+
             @media (max-width:543px) {
                 font-size: 2.3rem;
             }
@@ -60,4 +64,28 @@
 
         }
     }
+
+    .done {
+        position: relative;
+        width: 10rem;
+        margin: 0 auto;
+
+        .doneCheck {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: url("/src/img/subscribe-animation-background.png");
+            transition: left 0.7s;
+        }
+
+        .fa-check {
+            font-size: 10rem;
+            color: $color-active;
+        }
+
+    }
+
+
 }
