@@ -7,7 +7,6 @@ const devtool = devMode ? "source-map" : undefined;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const postcssPresetEnv = require("postcss-preset-env");
-const SpritesmithPlugin = require('webpack-spritesmith');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 
@@ -42,20 +41,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: devMode ? "style.[contenthash].css" : "style.[contenthash].min.css",
         }),
-
-        new SpritesmithPlugin({
-            src: {
-                cwd: path.resolve(__dirname, './src/img/icons/'),
-                glob: '*.png'
-            },
-            target: {
-                image: path.resolve(__dirname, 'src/img/icons/sprite/sprite.png'),
-                css: path.resolve(__dirname, 'src/style/global/sprite.scss')
-            },
-            apiOptions: {
-                cssImageRef: "./img/icons/sprite/sprite.png"
-            }
-        }),
+    
         new FaviconsWebpackPlugin({
             logo: path.resolve(__dirname, './src/img/icons/favicons/BestSeler-img-1.png'),
 

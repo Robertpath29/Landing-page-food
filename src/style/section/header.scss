@@ -113,12 +113,19 @@
     }
 
     &-input-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 35px;
         width: 35px;
         margin-left: 20px;
         border: 0;
-        @include sprite($-search-icon);
         background-color: transparent;
+
+        .fa-magnifying-glass {
+            color: white;
+            font-size: 2rem;
+        }
 
 
 
