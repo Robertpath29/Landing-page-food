@@ -49,7 +49,7 @@ function getOffsetElem(event) {
 
 }
 
-function scrollTo(positionElem) {
+export function scrollTo(positionElem) {
     $('html, body').animate({
         scrollTop: positionElem
     }, 1000);

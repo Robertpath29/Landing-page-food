@@ -20,6 +20,7 @@
         &>img {
             @media (max-width:543px) {
                 width: 100px;
+                margin-top: 3px;
             }
         }
     }
@@ -91,6 +92,10 @@
 
 
     &-input {
+        position: relative;
+        @media (max-width:543px) {
+            margin-top: 12px;
+        }
         &>input {
             opacity: 0;
             height: 35px;
@@ -107,6 +112,42 @@
 
             @media (max-width:543px) {
                 font-size: 2rem;
+            }
+
+        }
+
+        &-output {
+            position: absolute;
+            overflow-x: hidden;
+            overflow-wrap: break-word;
+            padding: 1rem;
+            width: 15rem;
+            height: 20rem;
+            top: 2.4rem;
+            left: 1.7rem;
+            color: $color-title-big;
+            background-color: rgba($color-title, $alpha: 0.7);
+
+            @media (max-width:600px) {
+
+                top: 3rem;
+            }
+
+            @media (max-width:543px) {
+
+                top: 5rem;
+            }
+
+            .output-value {
+                border: 2px solid rgba($color-title, $alpha: 1);
+                padding: 0.3rem;
+
+                &:hover {
+                    border: 2px solid $color-title-big;
+                    border-radius: 10px;
+                    padding: 0.3rem;
+                    cursor: pointer;
+                }
             }
 
         }
