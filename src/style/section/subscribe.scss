@@ -1,5 +1,5 @@
 .subscribe {
-    padding: 140px 0 291px 0;
+    padding: 140px 0 212px 0;
     background-color: gray;
     background-image: url("/src/img/subscribe-background.png");
     background-repeat: no-repeat;
@@ -32,8 +32,9 @@
     }
 
     &-input {
+        width: 100%;
         justify-content: center;
-        margin: 82px 35px 0 35px;
+        margin: 0px 35px 0 70px;
 
 
         &>input {
@@ -59,12 +60,15 @@
             font-size: 1.5rem;
 
         }
+
+        @media (max-width:600px) {
+            margin-left: 35px;
+        }
     }
 
     .done {
         position: relative;
         width: 10rem;
-        margin: 0 auto;
 
         .doneCheck {
             position: absolute;
@@ -81,6 +85,15 @@
             color: $color-active;
         }
 
+    }
+
+    .form-done {
+        margin-top: 82px;
+        justify-content: center;
+        height: 10rem;
+        @media (max-width:600px) {
+            margin-top: 25px;
+        }
     }
 
 

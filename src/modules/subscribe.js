@@ -23,12 +23,14 @@ function validInput(e) {
 function animDone() {
     $(".subscribe-input").addClass("d-none");
     $(".done").removeClass("d-none");
+    setInterval(() => {
+        $(".fa-check").removeClass("d-none");
+    }, 400)
     setTimeout(() => {
         $(".doneCheck").css({
             "left": "155px"
         })
-
-    }, 100);
+    }, 400);
 
     setTimeout(() => {
         $(".doneCheck").addClass("d-none");

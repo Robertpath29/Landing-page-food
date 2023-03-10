@@ -1,9 +1,10 @@
 section.subscribe.center-text
     h1.title-small Subscribe
     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
-    form(action="#").subscribe-input.d-flex
-        input(type="email" placeholder="Your Email")
-        button(type="submit").button.uppercase#subscribe subscribe
-    .done.d-none 
-        .doneCheck
-        i.fa-solid.fa-check
+    .form-done.d-flex
+        form(action="#").subscribe-input.d-flex
+            input(type="email" placeholder="Your Email")
+            button(type="submit").button.uppercase#subscribe subscribe
+        .done.d-none 
+            .doneCheck
+            i.fa-solid.fa-check.d-none 
