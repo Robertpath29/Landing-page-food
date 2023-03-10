@@ -8,7 +8,6 @@ $(window).on("load", function () {
 
 });
 
-
 function openCloseSearch() {
     const search = $("#search-input");
     search.on("input", searchElem)
@@ -16,13 +15,15 @@ function openCloseSearch() {
     if (!search.hasClass("visibility-input")) {
         search.addClass("visibility-input");
         $(document).on("click", function (e) {
-            if (e.target.className != "fa-solid fa-magnifying-glass" && e.target.className != "header-input-button" && e.target.id != "search-input") {
+            if (e.target.className != "fa-solid fa-magnifying-glass" && e.target.className != "header-input-button" && e.target.id != "search-input" && e.target.className != "output-value") {
                 search.removeClass("visibility-input");
                 $(".header-input-output").html("").addClass("d-none");
                 search.val("");
                 search.off("input");
+                $("h1,h2,a").removeClass("active");
                 $(document).off("click");
             }
+
         });
     }
 
@@ -31,25 +32,33 @@ function openCloseSearch() {
 }
 
 function searchElem() {
+    let arrayOutputElem = [];
+    let arrayIndex = 0;
     const searchVal = $(this).val();
     const outputDiv = $(".header-input-output");
     outputDiv.html("");
+    $("h1,h2,a").removeClass("active");
+
     if (outputDiv.hasClass("d-none"))
         outputDiv.removeClass("d-none");
 
     if (searchVal) {
         var regex = new RegExp(searchVal, 'gi');
-        $("body *").each(function () {
-            if ($(this).text().match(regex)) {
-                renderOutput($(this), outputDiv);
 
+        $("h1,h2,a").each(function () {
+            if ($(this).text().match(regex)) {
+                renderOutput($(this), outputDiv, arrayIndex);
+                arrayOutputElem.push($(this));
+                arrayIndex++;
             }
         });
 
         if (outputDiv.text() !== "") {
 
             $(".output-value").each(function () {
-                $(this).on("click", moveToResultInput);
+                $(this).on("click", function (event) {
+                    moveToResultInput(event, arrayOutputElem)
+                });
 
             });
 
@@ -65,17 +74,20 @@ function searchElem() {
 
 };
 
-function renderOutput(valueElem, outputDiv) {
+function renderOutput(valueElem, outputDiv, arrayIndex) {
     const output = outputDiv;
     let positionElem = Math.floor(valueElem.offset().top);
-    output.append(`<p class="output-value" data-position="${positionElem}">${valueElem.text()}</p>`);
+    output.append(`<p class="output-value" data-position="${positionElem}" data-index="${arrayIndex}">${valueElem.text()}</p>`);
+
 
 
 
 }
 
-function moveToResultInput(e) {
+function moveToResultInput(e, arrayOutputElem) {
     let pos = e.target.dataset.position;
+    let elem = $(arrayOutputElem[e.target.dataset.index]);
+    elem.addClass("active");
     scrollTo(pos);
 }
 

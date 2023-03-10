@@ -18,10 +18,17 @@ function visibilityBtnUp() {
     const btnUp = $(".navigation-up");
 
     if (window.scrollY > 500) {
-        btnUp.removeClass("d-none");
+        btnUp.css({
+            "right": "40px",
+            transform: "scale(1)"
+        });
+
 
     } else {
-        btnUp.addClass("d-none");
+        btnUp.css({
+            "right": "-100px",
+            transform: "scale(0)"
+        });
     }
 }
 

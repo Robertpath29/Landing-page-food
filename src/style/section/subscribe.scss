@@ -33,16 +33,12 @@
 
     &-input {
         justify-content: center;
-        margin-top: 82px;
-        margin-left: 35px;
-
-        @media (max-width:900px) {
-            margin-right: 35px;
-        }
+        margin: 82px 35px 0 35px;
 
 
         &>input {
-            width: 550px;
+            width: 100%;
+            max-width: 550px;
             height: 60px;
             border: none;
             outline: none;

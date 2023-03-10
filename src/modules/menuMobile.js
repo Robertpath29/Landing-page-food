@@ -12,7 +12,8 @@ $(window).on("load", function () {
             resize = false;
         } else if (window.outerWidth > 1038) {
             $(".header-nav").css("height", "");
-            $(document).off("click");
+            $("body").off("click");
+            resize = true;
 
         }
     })
@@ -23,16 +24,16 @@ function openCloseMenuMobile() {
     const menuBtn = $(".button-nav");
     const nav = $(".header-nav");
     menuBtn.on("click", function () {
-        nav.animate({
-            height: "20rem"
-        }, 10)
+        nav.css("height", "20rem");
     });
+    eventDocumentClick(nav)
 
-    $(document).on("click", function () {
+}
+
+function eventDocumentClick(nav) {
+    $("body").on("click", function () {
         if (nav.height() > 0) {
-            nav.animate({
-                height: "0px"
-            }, 10);
+            nav.css("height", "0rem");
         }
     })
 }

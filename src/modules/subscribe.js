@@ -49,11 +49,21 @@ function postAjax(inputVal) {
 function animNoValid(input) {
     input.css("border", "3px solid red");
     const form = $(".subscribe-input");
-    form.animate({ "margin-left": "-=15px" }, 50)
-        .animate({ "margin-left": "+=30px" }, 50)
-        .animate({ "margin-left": "-=30px" }, 50)
-        .animate({ "margin-left": "+=30px" }, 50)
-        .animate({ "margin-left": "-=15px" }, 50);
+    form.animate({
+        "margin-left": "-=15px",
+        "margin-right": "+=15px"
+    }, 50)
+        .animate({
+            "margin-left": "+=30px",
+            "margin-right": "-=30px"
+        }, 50)
+
+        .animate({ "margin-left": "-=30px", "margin-right": "+=30px" }, 50)
+
+        .animate({ "margin-left": "+=30px", "margin-right": "-=30px" }, 50)
+
+        .animate({ "margin-left": "-=15px", "margin-right": "+=15px" }, 50)
+
 }
 
 function removeBorderRed(e) {
